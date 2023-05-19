@@ -20,7 +20,7 @@ function home() {
   return (
     <section className="hero-section">
       {/* navbar */}
-      <Navbar bg="clear" expand="md">
+      <Navbar className="fixed-top"bg="clear" expand="md">
         <Container>
           <Navbar.Brand href="#home">
             <img className="logo-img" src={logo} />

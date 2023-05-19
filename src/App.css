@@ -1,25 +1,61 @@
-/* navbar */
-.logo-img{
-  width:10vw;
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-.nav-links{
+/* button top */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+
+/* navbar */
+.logo-img {
+  width: 10vw;
+}
+.nav-links {
   font-size: 4rem;
 }
 
 .hero-section {
   background: linear-gradient(rgba(7, 7, 7, 0.5), rgba(0, 0, 0, 0.1)),
-  url("./images/hero-background.jpg");
+    url("./images/hero-background.jpg");
   height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
   justify-content: center;
   background-position: 60%;
-
 }
 
 /* About me section */
-.about-logo{
+.about-logo {
   width: 4rem;
+}
 
+/* cards */
+.project-section {
+  background-color: #0b0c11;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 17px;
+  justify-items: center; 
+}
+.cards-container .card{
+  width: 24rem;
+  max-width: 25rem;
+}
+
+.card-img{
+max-width: 30rem;
+}
+.cards-container a{
+  text-decoration: none;
+  color: white;
 }

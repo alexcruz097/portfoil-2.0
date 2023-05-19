@@ -1,0 +1,90 @@
+[
+  {
+    "cardData": [
+      {
+        "name": "Job-Search-App",
+        "url": "https://job-search-app.herokuapp.com/",
+        "description": "Find new opportunities in your career  by using this Job Search application.",
+        "techUse": ["Node Js", "Express Js", "Ejs Template", "BootStrap"],
+        "gitHub": "https://github.com/alexcruz097/Job-Search"
+      },
+      {
+        "name": "Netflix-Clone",
+        "url": "https://62eb39e08fe38e300d06e499--euphonious-boba-eca028.netlify.app/",
+        "description": "Put your brain to work. How many questions can you get right?",
+        "techUse": ["React Js", "CSS", "JSX"],
+        "gitHub": "https://github.com/alexcruz097/NetflixReactClone"
+      },
+      {
+        "name": "Trivia-App",
+        "url": "https://tender-murdock-4dcc94.netlify.app/",
+        "description": "Put your brain to work. How many questions can you get right?",
+        "techUse": ["HTML", "CSS", "JavaScript"],
+        "gitHub": "https://github.com/alexcruz097/Trivia-App"
+      },
+      {
+        "name": "The EchoSystem",
+        "url": "https://www.theechosystem.org//",
+        "description": "Website I built and design for the company that I had an intership with. The EchoSystem.",
+        "techUse": ["HubSpot","Templates", "DNS"],
+        "gitHub": "https://github.com/alexcruz097/Job-Search"
+      }, {
+        "name": "Trees by Water",
+        "url": "https://treesbythewater.org/",
+        "description": "Website I built and design for the company that I had an intership with. TreesByWater.",
+        "techUse": ["Hubspot","Templates", "DNS"],
+        "gitHub": "https://github.com/alexcruz097/Job-Search"
+      }, {
+        "name": "Solid Foundation",
+        "url": "http://solidmoneyfoundation.com/",
+        "description": "Website I built and design for the company that I had an intership with. SolidMoneyFoundation",
+        "techUse": ["Hubspot","Templates", "DNS"],
+        "gitHub": "https://github.com/alexcruz097/Job-Search"
+      },
+    
+      {
+        "name": "Weather-App",
+        "url": "https://eloquent-sammet-a7d128.netlify.app/",
+        "description": "Do you need a sweater or a beach towel? Use this app to find out!",
+        "techUse": ["HTML", "CSS", "JavaScrip", "React Js"],
+        "gitHub": "https://github.com/alexcruz097/weather-react"
+      },
+      {
+        "name": "Budget-App",
+        "url": "https://focused-jepsen-6485e6.netlify.app/",
+        "description": "Need help with your financial responsibility? This Budget-App will be your new best friend.",
+        "techUse": ["HTML", "CSS", "JavaScript"],
+        "gitHub": "https://github.com/alexcruz097/Budget-App"
+      },
+
+      {
+        "name": "Microsoft-Clone",
+        "url": "https://5f54672b72c9456899f31e16--cocky-mayer-d3d879.netlify.app/",
+        "description": "A Microsoft home page clone using flexbox and grid.",
+        "techUse": ["HTML", "CSS"],
+        "gitHub": "https://github.com/alexcruz097/Microsoft-Clone"
+      },
+      {
+        "name": "Menu",
+        "url": "https://musing-aryabhata-f609a6.netlify.app/",
+        "description": "Doesn't this menu make you hungry? It makes me hungry.",
+        "techUse": ["HTML", "CSS", "JavaScript"],
+        "gitHub": "https://github.com/alexcruz097/Menu"
+      },
+      {
+        "name": "Tin-Dog",
+        "url": "https://infallible-shockley-7a4a74.netlify.app/",
+        "description": "Tinder but for dogs using Bootstrap.",
+        "techUse": ["HTML", "Bootstrap"],
+        "gitHub": "https://github.com/alexcruz097/TinDog"
+      },
+      {
+        "name": "Random-Facts",
+        "url": "https://inspiring-montalcini-f3626a.netlify.app/",
+        "description": "Do you want to impress your friend? Use this random fact generator and blow their minds in your next get together.",
+        "techUse": ["HTML", "CSS", "JavaScrip"],
+        "gitHub": "https://github.com/alexcruz097/FunFacts"
+      }
+    ]
+  }
+]

@@ -3,10 +3,10 @@ import React from "react";
 // images imported
 import starterLogo from "../images/starter-logo.png";
 import starterImage from "../images/starter-img.png";
-import solverLogo from "../images/solver-logo.png"
-import prideLogo from "../images/pride-logo.png"
-import prideIMG from "../images/pride-img.png"
-import problemIMG from "../images/problem-img.png"
+import solverLogo from "../images/solver-logo.png";
+import prideLogo from "../images/pride-logo.png";
+import prideIMG from "../images/pride-img.png";
+import problemIMG from "../images/problem-img.png";
 // bootstrap components importer
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -16,7 +16,8 @@ import Image from "react-bootstrap/Image";
 function About() {
   return (
     <section className="about-section">
-      <h1 className="text-center my-4">About me</h1>
+      <p className="text-center pt-5 mb-5 display-5">About Me</p>
+
       <Container>
         <Row className="my-5">
           <Col className="d-flex flex-column align-items-center justify-content-center">
