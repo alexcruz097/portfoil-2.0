@@ -34,7 +34,7 @@ function Projects() {
     funThumb,
   ];
   return (
-    <section className="project-section">
+    <section className="project-section pb-5">
       <p className="text-center pt-5 mb-5 display-5 text-white">Projects</p>
       {/* cards */}
       {/* iterate thru json to show multiple projects */}

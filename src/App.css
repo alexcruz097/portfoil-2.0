@@ -59,3 +59,20 @@ max-width: 30rem;
   text-decoration: none;
   color: white;
 }
+
+/* contact */
+.contact-links{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Footer */
+
+.footer{
+  background-color: #0b0c11;
+  color: white;
+}
+.footer-inner{
+  display: flex;
+  justify-content: space-between;
+}
