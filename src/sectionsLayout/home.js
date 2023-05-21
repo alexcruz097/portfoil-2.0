@@ -20,14 +20,14 @@ function home() {
   return (
     <section className="hero-section">
       {/* navbar */}
-      <Navbar className="fixed-top"bg="clear" expand="md">
+      <Navbar className="fixed-top navbar" expand="md" >
         <Container>
           <Navbar.Brand href="#home">
             <img className="logo-img" src={logo} />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
+          <Navbar.Toggle aria-controls="basic-navbar-nav"  />
+          <Navbar.Collapse id="basic-navbar-nav" >
+            <Nav className="ms-auto" >
               <Nav.Link
                 className="fs-5"
                 style={{ color: "white" }}
@@ -70,9 +70,9 @@ function home() {
       {/* Hero content */}
       <Container>
         <Row className="d-flex align-items-center" style={{ height: "70vh" }}>
-          <Col className="align-items-center" xs={10}>
+          <Col xs={10}>
             <p style={{ color: "white" }} className="display-6">
-              Hello, My name is Alex Cruz <br />
+              Hello, My name is Alex Cruz<br />
               Front-end web developer
             </p>
             <button type="button" class="btn btn-danger">
@@ -93,7 +93,7 @@ function home() {
               </Offcanvas.Body>
             </Offcanvas>
           </Col>
-          <Col>2 of 2</Col>
+          <Col cs={1}>2 of 2</Col>
         </Row>
       </Container>
     </section>

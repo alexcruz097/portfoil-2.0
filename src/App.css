@@ -12,8 +12,11 @@
 
 
 /* navbar */
+.navbar{
+  background-color: rgb(18, 83, 83);
+}
 .logo-img {
-  width: 10vw;
+  width: 4vw;
 }
 .nav-links {
   font-size: 4rem;
@@ -34,7 +37,19 @@
 .about-logo {
   width: 4rem;
 }
+.about-thumnail{
+  display: none;
+}
+.toolbox-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.toolBTN{
+  width: 80vw;
 
+}
 /* cards */
 .project-section {
   background-color: #0b0c11;
@@ -75,4 +90,25 @@ max-width: 30rem;
 .footer-inner{
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 770px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 17px;
+    justify-items: center; 
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr 1fr;
+ 
+  }
 }
