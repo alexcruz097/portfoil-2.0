@@ -59,7 +59,7 @@ function About({ name, ...props }) {
   const handleShow = () => setShow(true);
 
   return (
-    <section className="about-section">
+    <section className="about-section" id="about">
       <p className="text-center pt-5 mb-5 display-5">About Me</p>
 
       <Container className="pb-5">
@@ -106,9 +106,11 @@ function About({ name, ...props }) {
           </Col>
         </Row>
         <>
+        <div className="toolBTN-container">
           <Button className="toolBTN" variant="primary" onClick={handleShow}>
             My Tool Box
           </Button>
+          </div>
           <Offcanvas
             placement="bottom"
             show={show}

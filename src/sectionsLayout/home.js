@@ -8,7 +8,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 // logo images
-import logo from "../images/logo.png";
+import logo from "../images/download.png";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
@@ -38,37 +38,37 @@ function home() {
               <Nav.Link
                 className="fs-5"
                 style={{ color: "white" }}
-                href="#link"
+                href="#about"
               >
                 About
               </Nav.Link>
               <Nav.Link
                 className="fs-5"
                 style={{ color: "white" }}
-                href="#link"
+                href="#projects"
               >
                 Projects
               </Nav.Link>
               <Nav.Link
                 className="fs-5"
                 style={{ color: "white" }}
-                href="#link"
+                href="#contacts"
               >
                 Contacts
               </Nav.Link>
               <Nav.Link
                 className="fs-5"
                 style={{ color: "white" }}
-                href="#link"
+                href="#portfolio"
               >
-                Portfolio
+                GitHub Portfolio
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
       {/* Hero content */}
-      <Container>
+      <Container id="home">
         <Row className="d-flex align-items-center" style={{ height: "70vh" }}>
           <Col xs={10}>
             <p style={{ color: "white" }} className="display-6">
