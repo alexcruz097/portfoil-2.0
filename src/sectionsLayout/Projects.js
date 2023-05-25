@@ -42,12 +42,12 @@ function Projects() {
       <Container className="cards-container">
         {data[0].cardData.map((project, i) => (
           <Card className="card">
+            <Card.Body>
+              <Card.Title className="text-center">{project.name}</Card.Title>
+              <Card.Text>&#8264;{project.description}</Card.Text>
+            </Card.Body>
             {/* iterate thru images array */}
             <Card.Img className="card-img" variant="top" src={thumbnail[i]} />
-            <Card.Body>
-              <Card.Title>{project.name}</Card.Title>
-              <Card.Text>{project.description}</Card.Text>
-            </Card.Body>
             <ListGroup className="list-group-flush">
               {/* iterate thru projects tools*/}
               {project.techUse.map((tool, i) => {
@@ -60,8 +60,16 @@ function Projects() {
               })}
             </ListGroup>
             <Card.Body className="project-buttons">
-              <Button><a href={project.url} target="__blank">View Live</a></Button>
-              <Button><a href={project.gitHub} target="__blank">GitHub</a></Button>
+              <Button>
+                <a href={project.url} target="__blank">
+                  View Live
+                </a>
+              </Button>
+              <Button>
+                <a href={project.gitHub} target="__blank">
+                  GitHub
+                </a>
+              </Button>
             </Card.Body>
           </Card>
         ))}

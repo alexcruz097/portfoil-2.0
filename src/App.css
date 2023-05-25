@@ -2,6 +2,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+
 /* button top */
 #btn-back-to-top {
   position: fixed;
@@ -30,6 +32,10 @@ width: 14vw;
   background-position: 60%;
 }
 
+.work-together-btn a{
+text-decoration: none;
+color: white;
+}
 
 /* About me section */
 .about-logo {
@@ -65,12 +71,16 @@ width: 14vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-row-gap: 17px;
+  grid-row-gap: 3vh;
 }
 
 .cards-container a {
   text-decoration: none;
   color: white;
+}
+.card{
+  width: 80vw;
+  margin: auto;
 }
 
 /* contact */
@@ -82,7 +92,10 @@ width: 14vw;
 .contact-container {
   height: 40vh;
 }
-
+.link{
+  text-decoration: none;
+  color: black;
+}
 /* Footer */
 
 .footer {
