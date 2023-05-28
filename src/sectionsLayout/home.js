@@ -10,11 +10,15 @@ import Navbar from "react-bootstrap/Navbar";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 // logo images
-import logo from "../images/download.png";
+import logo from "../images/Alexlogo.png";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
+// animation
+import Fade from "react-reveal/Fade";
+import Flip from "react-reveal/Flip";
+import Jump from "react-reveal/Jump";
 
-function home() {
+function Home() {
   // funtion to toggle Q/A
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -30,41 +34,44 @@ function home() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link
-                className="fs-5"
-                style={{ color: "white" }}
-                href="#home"
-              >
-                Home
-              </Nav.Link>
-              <Nav.Link
-                className="fs-5"
-                style={{ color: "white" }}
-                href="#about"
-              >
-                About
-              </Nav.Link>
-              <Nav.Link
-                className="fs-5"
-                style={{ color: "white" }}
-                href="#projects"
-              >
-                Projects
-              </Nav.Link>
-              <Nav.Link
-                className="fs-5"
-                style={{ color: "white" }}
-                href="#contacts"
-              >
-                Contacts
-              </Nav.Link>
-              <Nav.Link
-                className="fs-5"
-                style={{ color: "white" }}
-                href="#portfolio"
-              >
-                GitHub Portfolio
-              </Nav.Link>
+              {/* link animations */}
+              <Fade top>
+                <Nav.Link
+                  className="fs-5"
+                  style={{ color: "white" }}
+                  href="#home"
+                >
+                  Home
+                </Nav.Link>
+                <Nav.Link
+                  className="fs-5"
+                  style={{ color: "white" }}
+                  href="#about"
+                >
+                  About
+                </Nav.Link>
+                <Nav.Link
+                  className="fs-5"
+                  style={{ color: "white" }}
+                  href="#projects"
+                >
+                  Projects
+                </Nav.Link>
+                <Nav.Link
+                  className="fs-5"
+                  style={{ color: "white" }}
+                  href="#contacts"
+                >
+                  Contacts
+                </Nav.Link>
+                <Nav.Link
+                  className="fs-5"
+                  style={{ color: "white" }}
+                  href="#portfolio"
+                >
+                  GitHub Portfolio
+                </Nav.Link>
+              </Fade>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -73,19 +80,24 @@ function home() {
       <Container id="home">
         <Row className="d-flex align-items-center" style={{ height: "70vh" }}>
           <Col xs={10}>
-            <p style={{ color: "white" }} className="display-6">
-              Hello, My name is Alex Cruz
-              <br />
-              Front-end web developer
-            </p>
-            <button type="button" class="btn btn-danger work-together-btn">
-              <a href="#contacts">Lets work together</a>
-            </button>
+            <Flip top>
+              <p style={{ color: "white" }} className="display-6">
+                Hello, My name is Alex Cruz
+                <br />
+                Front-end web developer
+              </p>
+            </Flip>
+            <Jump>
+              <button type="button" class="btn btn-danger work-together-btn">
+                <a href="#contacts">Lets work together</a>
+              </button>
+            </Jump>
             {/* Q/A button */}
-            <Button className="ms-2" variant="primary" onClick={handleShow}>
-              Q&A
-            </Button>
-
+         
+              <Button className="ms-2" variant="primary" onClick={handleShow}>
+                Q&A
+              </Button>
+         
             <Offcanvas show={show} onHide={handleClose}>
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title>Questions and Answers</Offcanvas.Title>
@@ -164,4 +176,4 @@ function home() {
   );
 }
 
-export default home;
+export default Home;

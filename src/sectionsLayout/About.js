@@ -26,6 +26,10 @@ import commandIcon from "../about-img/icons-command-line.png";
 import gitIcon from "../about-img/icons-git.png";
 import gitHubIcon from "../about-img/icons-github.png";
 import herokuIcon from "../about-img/icons-heroku.png";
+// lmporting animations
+import Fade from "react-reveal/Fade";
+import Flip from 'react-reveal/Flip';
+
 function About({ name, ...props }) {
   // icon title
   const toolsIconTitle = [
@@ -65,51 +69,71 @@ function About({ name, ...props }) {
       <Container className="pb-5">
         <Row className="my-5">
           <Col className="d-flex flex-column align-items-center justify-content-center">
-            <img className="about-logo " src={starterLogo} />
-            <h3 className="text-center">|Self-Starter</h3>
-            <p>
-              Being a self-taught web-developer has helped me become a
-              self-starter. I am always excited to learn new things and seeing
-              the finished product that I am working on.
-            </p>
+            <Fade left>
+              <img className="about-logo " src={starterLogo} />
+              <h3 className="text-center">|Self-Starter</h3>
+              <p>
+                Being a self-taught web-developer has helped me become a
+                self-starter. I am always excited to learn new things and seeing
+                the finished product that I am working on.
+              </p>
+            </Fade>
           </Col>
+
           <Col className="about-thumnail">
-            <Image src={starterImage} thumbnail />
+            <Fade right>
+              <Image src={starterImage} thumbnail />
+            </Fade>
           </Col>
         </Row>
         <Row className="my-5">
           <Col className="about-thumnail">
-            <Image src={problemIMG} thumbnail />
+            <Fade left>
+              <Image src={problemIMG} thumbnail />
+            </Fade>
           </Col>
           <Col className="d-flex flex-column align-items-center justify-content-center">
-            <img className="about-logo " src={solverLogo} />
-            <h3 className="text-center">|Problem-Solver</h3>
-            <p>
-              I always try to be in uncomfortable situations by pushing myself
-              to learn new things. Instead of running away afraid of a new
-              challenge, I face it head-on.
-            </p>
+            <Fade right>
+              <img className="about-logo " src={solverLogo} />
+              <h3 className="text-center">|Problem-Solver</h3>
+              <p>
+                I always try to be in uncomfortable situations by pushing myself
+                to learn new things. Instead of running away afraid of a new
+                challenge, I face it head-on.
+              </p>
+            </Fade>
           </Col>
         </Row>
         <Row className="my-5">
           <Col className="d-flex flex-column align-items-center justify-content-center">
-            <img className="about-logo " src={prideLogo} />
-            <h3 className="text-center">|Pride</h3>
-            <p>
-              I take pride in the work I do. I am always thinking about better
-              ways that I can improve my projects. I take feedback from others
-              to improve the user experience.
-            </p>
+            <Fade left>
+              <img className="about-logo " src={prideLogo} />
+              <h3 className="text-center">|Pride</h3>
+              <p>
+                I take pride in the work I do. I am always thinking about better
+                ways that I can improve my projects. I take feedback from others
+                to improve the user experience.
+              </p>
+            </Fade>
           </Col>
+
           <Col className="about-thumnail">
-            <Image src={prideIMG} thumbnail />
+            <Fade right>
+              <Image src={prideIMG} thumbnail />
+            </Fade>
           </Col>
         </Row>
         <>
-        <div className="toolBTN-container">
-          <Button className="toolBTN" variant="primary" onClick={handleShow}>
-            My Tool Box
-          </Button>
+          <div className="toolBTN-container">
+            <Flip bottom>
+              <Button
+                className="toolBTN"
+                variant="primary"
+                onClick={handleShow}
+              >
+                My Tool Box
+              </Button>
+            </Flip>
           </div>
           <Offcanvas
             placement="bottom"
@@ -128,7 +152,9 @@ function About({ name, ...props }) {
                   <Card style={{ width: "96px" }}>
                     <Card.Img variant="top" src={icon} />
                     <Card.Body>
-                      <Card.Title className="text-center">{toolsIconTitle[i]}</Card.Title>
+                      <Card.Title className="text-center">
+                        {toolsIconTitle[i]}
+                      </Card.Title>
                     </Card.Body>
                   </Card>
                 );

@@ -3,7 +3,6 @@
   scroll-behavior: smooth;
 }
 
-
 /* button top */
 #btn-back-to-top {
   position: fixed;
@@ -17,9 +16,8 @@
   background-color: rgb(0, 108, 108);
 }
 .logo-img {
-width: 14vw;
+  width: 14vw;
 }
-
 
 .hero-section {
   background: linear-gradient(rgba(7, 7, 7, 0.5), rgba(0, 0, 0, 0.1)),
@@ -32,9 +30,9 @@ width: 14vw;
   background-position: 60%;
 }
 
-.work-together-btn a{
-text-decoration: none;
-color: white;
+.work-together-btn a {
+  text-decoration: none;
+  color: white;
 }
 
 /* About me section */
@@ -62,7 +60,7 @@ color: white;
 .project-section {
   background-color: #0b0c11;
 }
-.project-buttons{
+.project-buttons {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
@@ -78,9 +76,13 @@ color: white;
   text-decoration: none;
   color: white;
 }
-.card{
+.card {
   width: 80vw;
   margin: auto;
+}
+.card:hover{
+transform: scale(1.1);
+transition: all .4s ease-in;
 }
 
 /* contact */
@@ -92,7 +94,7 @@ color: white;
 .contact-container {
   height: 40vh;
 }
-.link{
+.link {
   text-decoration: none;
   color: black;
 }
@@ -107,30 +109,37 @@ color: white;
   justify-content: space-between;
 }
 
-
-
-
-@media screen and (max-width: 770px) {
-  .cards-container {
-    grid-template-columns: 1fr;
+/* media queries */
+@media screen and (min-width: 500px) {
+  /* project */
+  .card {
+    width: 25rem;
   }
 }
-@media screen and (min-width: 770px) {
+
+@media screen and (min-width: 768px) {
+  /* about me */
   .about-thumnail {
     display: block;
   }
-}
 
-@media screen and (min-width: 830px) {
+  .toolBTN {
+    width: 20vw;
+  }
+
+  /* project */
   .cards-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 17px;
-    justify-items: center;
+    grid-row-gap: 3vh;
+    grid-column-gap: 2vh;
+  }
+  .card {
+    width: 100%;
+    min-height: 100%;
   }
 }
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 992px) {
   .cards-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
