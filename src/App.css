@@ -2,8 +2,14 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+/* changing navbar color */
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(12,244,103, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
-/* button top */
+.navbar-toggler.navbar-toggler {
+  border-color: rgb(12, 244, 103);
+}
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
@@ -13,10 +19,11 @@
 
 /* navbar */
 .navbar {
-  background-color: rgb(0, 108, 108);
+  background-color: #11100b;
 }
 .logo-img {
-  width: 14vw;
+  width: 25vw;
+  max-width: 12rem;
 }
 
 .hero-section {
@@ -80,9 +87,9 @@
   width: 80vw;
   margin: auto;
 }
-.card:hover{
-transform: scale(1.1);
-transition: all .4s ease-in;
+.card:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in;
 }
 
 /* contact */
@@ -118,6 +125,10 @@ transition: all .4s ease-in;
 }
 
 @media screen and (min-width: 768px) {
+  /* navbar */
+  .logo-img {
+    width: 18vw;
+  }
   /* about me */
   .about-thumnail {
     display: block;
@@ -140,6 +151,11 @@ transition: all .4s ease-in;
 }
 
 @media screen and (min-width: 992px) {
+  /* navbar */
+  .logo-img {
+    width: 14vw;
+  }
+
   .cards-container {
     grid-template-columns: 1fr 1fr 1fr;
   }

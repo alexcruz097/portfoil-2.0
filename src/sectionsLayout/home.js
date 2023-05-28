@@ -15,8 +15,6 @@ import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 // animation
 import Fade from "react-reveal/Fade";
-import Flip from "react-reveal/Flip";
-import Jump from "react-reveal/Jump";
 
 function Home() {
   // funtion to toggle Q/A
@@ -26,10 +24,12 @@ function Home() {
   return (
     <section className="hero-section">
       {/* navbar */}
-      <Navbar className="fixed-top navbar" expand="md">
+      <Navbar className="fixed-top navbar " expand="md">
         <Container>
           <Navbar.Brand href="#home">
-            <img className="logo-img" src={logo} />
+            <Fade top>
+              <img className="logo-img" src={logo} />
+            </Fade>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -80,24 +80,24 @@ function Home() {
       <Container id="home">
         <Row className="d-flex align-items-center" style={{ height: "70vh" }}>
           <Col xs={10}>
-            <Flip top>
+            <Fade top>
               <p style={{ color: "white" }} className="display-6">
                 Hello, My name is Alex Cruz
                 <br />
                 Front-end web developer
               </p>
-            </Flip>
-            <Jump>
-              <button type="button" class="btn btn-danger work-together-btn">
-                <a href="#contacts">Lets work together</a>
-              </button>
-            </Jump>
+            </Fade>
+            <button type="button" class="btn btn-danger work-together-btn">
+              <a href="#contacts">
+                <Fade top>Lets work together</Fade>
+              </a>
+            </button>
             {/* Q/A button */}
-         
-              <Button className="ms-2" variant="primary" onClick={handleShow}>
-                Q&A
-              </Button>
-         
+
+            <Button className="ms-2" variant="primary" onClick={handleShow}>
+              <Fade top>Q&A</Fade>
+            </Button>
+
             <Offcanvas show={show} onHide={handleClose}>
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title>Questions and Answers</Offcanvas.Title>
