@@ -4,7 +4,6 @@ import data from "../cardInfo.json";
 import { Button, Container } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
 // animations
-import Fade from "react-reveal/Fade";
 
 // importing all images---need to find a better dry method
 import echoSystem from "../thumbnail/echoSystemThumb.png";
@@ -43,7 +42,6 @@ function Projects() {
 
       <Container className="cards-container">
         {data[0].cardData.map((project, i) => (
-        <Fade bottom>
         <Card className="card">
               <Card.Body>
                 <Card.Title className="text-center">{project.name}</Card.Title>
@@ -75,7 +73,6 @@ function Projects() {
                 </Button>
               </Card.Body>
             </Card>
-          </Fade>
         ))}
       </Container>
     </section>

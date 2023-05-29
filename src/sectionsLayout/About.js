@@ -26,9 +26,7 @@ import commandIcon from "../about-img/icons-command-line.png";
 import gitIcon from "../about-img/icons-git.png";
 import gitHubIcon from "../about-img/icons-github.png";
 import herokuIcon from "../about-img/icons-heroku.png";
-// lmporting animations
-import Fade from "react-reveal/Fade";
-import Flip from 'react-reveal/Flip';
+
 
 function About({ name, ...props }) {
   // icon title
@@ -69,7 +67,6 @@ function About({ name, ...props }) {
       <Container className="pb-5">
         <Row className="my-5">
           <Col className="d-flex flex-column align-items-center justify-content-center">
-            <Fade left>
               <img className="about-logo " src={starterLogo} />
               <h3 className="text-center">|Self-Starter</h3>
               <p>
@@ -77,23 +74,17 @@ function About({ name, ...props }) {
                 self-starter. I am always excited to learn new things and seeing
                 the finished product that I am working on.
               </p>
-            </Fade>
           </Col>
 
           <Col className="about-thumnail">
-            <Fade right>
               <Image src={starterImage} thumbnail />
-            </Fade>
           </Col>
         </Row>
         <Row className="my-5">
           <Col className="about-thumnail">
-            <Fade left>
               <Image src={problemIMG} thumbnail />
-            </Fade>
           </Col>
           <Col className="d-flex flex-column align-items-center justify-content-center">
-            <Fade right>
               <img className="about-logo " src={solverLogo} />
               <h3 className="text-center">|Problem-Solver</h3>
               <p>
@@ -101,12 +92,10 @@ function About({ name, ...props }) {
                 to learn new things. Instead of running away afraid of a new
                 challenge, I face it head-on.
               </p>
-            </Fade>
           </Col>
         </Row>
         <Row className="my-5">
           <Col className="d-flex flex-column align-items-center justify-content-center">
-            <Fade left>
               <img className="about-logo " src={prideLogo} />
               <h3 className="text-center">|Pride</h3>
               <p>
@@ -114,18 +103,14 @@ function About({ name, ...props }) {
                 ways that I can improve my projects. I take feedback from others
                 to improve the user experience.
               </p>
-            </Fade>
           </Col>
 
           <Col className="about-thumnail">
-            <Fade right>
               <Image src={prideIMG} thumbnail />
-            </Fade>
           </Col>
         </Row>
         <>
           <div className="toolBTN-container">
-            <Flip bottom>
               <Button
                 className="toolBTN"
                 variant="primary"
@@ -133,7 +118,6 @@ function About({ name, ...props }) {
               >
                 My Tool Box
               </Button>
-            </Flip>
           </div>
           <Offcanvas
             placement="bottom"
