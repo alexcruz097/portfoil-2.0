@@ -14,6 +14,8 @@ import logo from "../images/Alexlogo.png";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
+// import gif
+import gitHub from "../image-icons/navGitHub.png";
 function Home() {
   // funtion to toggle Q/A
   const [show, setShow] = useState(false);
@@ -62,9 +64,10 @@ function Home() {
               <Nav.Link
                 className="fs-5"
                 style={{ color: "white" }}
-                href="#portfolio"
+                href="https://github.com/alexcruz097/portfoil-2.0"
+                target="_blank"
               >
-                GitHub Portfolio
+                <img src={gitHub} />
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -73,7 +76,7 @@ function Home() {
       {/* Hero content */}
       <Container id="home">
         <Row className="d-flex align-items-center" style={{ height: "70vh" }}>
-          <Col xs={10}>
+          <Col xs={10} className="mt-5 pt-5">
             <p style={{ color: "white" }} className="display-6">
               Hello, My name is Alex Cruz
               <br />

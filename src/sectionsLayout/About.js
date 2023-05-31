@@ -27,7 +27,6 @@ import gitIcon from "../about-img/icons-git.png";
 import gitHubIcon from "../about-img/icons-github.png";
 import herokuIcon from "../about-img/icons-heroku.png";
 
-
 function About({ name, ...props }) {
   // icon title
   const toolsIconTitle = [
@@ -67,57 +66,53 @@ function About({ name, ...props }) {
       <Container className="pb-5">
         <Row className="my-5">
           <Col className="d-flex flex-column align-items-center justify-content-center">
-              <img className="about-logo " src={starterLogo} />
-              <h3 className="text-center">|Self-Starter</h3>
-              <p>
-                Being a self-taught web-developer has helped me become a
-                self-starter. I am always excited to learn new things and seeing
-                the finished product that I am working on.
-              </p>
+            <img className="about-logo " src={starterLogo} />
+            <h3 className="text-center">|Self-Starter</h3>
+            <p>
+              Being a self-taught web-developer has helped me become a
+              self-starter. I am always excited to learn new things and seeing
+              the finished product that I am working on.
+            </p>
           </Col>
 
           <Col className="about-thumnail">
-              <Image src={starterImage} thumbnail />
+            <Image src={starterImage} thumbnail />
           </Col>
         </Row>
         <Row className="my-5">
           <Col className="about-thumnail">
-              <Image src={problemIMG} thumbnail />
+            <Image src={problemIMG} thumbnail />
           </Col>
           <Col className="d-flex flex-column align-items-center justify-content-center">
-              <img className="about-logo " src={solverLogo} />
-              <h3 className="text-center">|Problem-Solver</h3>
-              <p>
-                I always try to be in uncomfortable situations by pushing myself
-                to learn new things. Instead of running away afraid of a new
-                challenge, I face it head-on.
-              </p>
+            <img className="about-logo " src={solverLogo} />
+            <h3 className="text-center">|Problem-Solver</h3>
+            <p>
+              I always try to be in uncomfortable situations by pushing myself
+              to learn new things. Instead of running away afraid of a new
+              challenge, I face it head-on.
+            </p>
           </Col>
         </Row>
         <Row className="my-5">
           <Col className="d-flex flex-column align-items-center justify-content-center">
-              <img className="about-logo " src={prideLogo} />
-              <h3 className="text-center">|Pride</h3>
-              <p>
-                I take pride in the work I do. I am always thinking about better
-                ways that I can improve my projects. I take feedback from others
-                to improve the user experience.
-              </p>
+            <img className="about-logo " src={prideLogo} />
+            <h3 className="text-center">|Pride</h3>
+            <p>
+              I take pride in the work I do. I am always thinking about better
+              ways that I can improve my projects. I take feedback from others
+              to improve the user experience.
+            </p>
           </Col>
 
           <Col className="about-thumnail">
-              <Image src={prideIMG} thumbnail />
+            <Image src={prideIMG} thumbnail />
           </Col>
         </Row>
         <>
           <div className="toolBTN-container">
-              <Button
-                className="toolBTN"
-                variant="primary"
-                onClick={handleShow}
-              >
-                My Tool Box
-              </Button>
+            <Button className="toolBTN" variant="primary" onClick={handleShow}>
+              My Tool Box
+            </Button>
           </div>
           <Offcanvas
             placement="bottom"

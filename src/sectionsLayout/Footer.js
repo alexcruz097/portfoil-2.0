@@ -6,8 +6,8 @@ function Footer() {
   return (
     <footer className="footer py-3">
       <Container className="footer-inner">
-        <p className="h5">Alex Cruz&copy;{currentyear} </p >
-        <p className="h5">Created with React Js</p >
+        <p className="h5">Alex Cruz&copy;{currentyear} </p>
+        <p className="h5">Created with React Js</p>
       </Container>
     </footer>
   );

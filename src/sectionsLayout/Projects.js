@@ -3,8 +3,10 @@ import Card from "react-bootstrap/Card";
 import data from "../cardInfo.json";
 import { Button, Container } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
-// animations
-
+// importing gif
+import github from "../image-icons/github.gif";
+import liveGif from "../image-icons/live-video.gif";
+import important from "../image-icons/important.gif";
 // importing all images---need to find a better dry method
 import echoSystem from "../thumbnail/echoSystemThumb.png";
 import solidMoneyThumb from "../thumbnail/solidMoneyThumb.png";
@@ -42,37 +44,45 @@ function Projects() {
 
       <Container className="cards-container">
         {data[0].cardData.map((project, i) => (
-        <Card className="card">
-              <Card.Body>
-                <Card.Title className="text-center">{project.name}</Card.Title>
-                <Card.Text>&#8264;{project.description}</Card.Text>
-              </Card.Body>
-              {/* iterate thru images array */}
+          <Card className="card">
+            <Card.Body>
+              <Card.Title className="text-center card-title">
+                {project.name}
+              </Card.Title>
+              <Card.Text className="card-description">
+                <img src={important} />
+                {project.description}
+              </Card.Text>
+            </Card.Body>
+            {/* iterate thru images array */}
+            <a src={project.url}>
               <Card.Img className="card-img" variant="top" src={thumbnail[i]} />
-              <ListGroup className="list-group-flush">
-                {/* iterate thru projects tools*/}
-                {project.techUse.map((tool, i) => {
-                  return (
-                    <ListGroup.Item>
-                      {" "}
-                      {i + 1}. {tool}
-                    </ListGroup.Item>
-                  );
-                })}
-              </ListGroup>
-              <Card.Body className="project-buttons">
-                <Button>
-                  <a href={project.url} target="__blank">
-                    View Live
-                  </a>
-                </Button>
-                <Button>
-                  <a href={project.gitHub} target="__blank">
-                    GitHub
-                  </a>
-                </Button>
-              </Card.Body>
-            </Card>
+            </a>
+            <ListGroup className="list-group-flush">
+              {/* iterate thru projects tools*/}
+              {project.techUse.map((tool, i) => {
+                return (
+                  <ListGroup.Item className="card-list">
+                    {" "}
+                    {i + 1}. {tool}
+                  </ListGroup.Item>
+                );
+              })}
+            </ListGroup>
+            <Card.Body className="project-buttons">
+              <a href={project.url} target="__blank">
+                <img src={liveGif} />
+                <span style={{ color: "black", display: "block" }}>
+                  View Live
+                </span>
+              </a>
+
+              <a href={project.gitHub} target="__blank">
+                <img src={github} />
+                <span style={{ color: "black", display: "block" }}>GitHub</span>
+              </a>
+            </Card.Body>
+          </Card>
         ))}
       </Container>
     </section>
