@@ -70,7 +70,7 @@ function Projects() {
               })}
             </ListGroup>
             <Card.Body className="project-buttons">
-              <a href={project.url} target="__blank">
+              <a href={project.url} target="__blank" >
                 <img src={liveGif} />
                 <span style={{ color: "black", display: "block" }}>
                   View Live

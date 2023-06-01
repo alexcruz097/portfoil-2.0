@@ -128,13 +128,9 @@ function About({ name, ...props }) {
             <Offcanvas.Body className="toolbox-container">
               {toolsIcon.map((icon, i) => {
                 return (
-                  <Card style={{ width: "96px" }}>
+                  <Card className="tool-card" style={{ width: "96px" }}>
                     <Card.Img variant="top" src={icon} />
-                    <Card.Body>
-                      <Card.Title className="text-center">
-                        {toolsIconTitle[i]}
-                      </Card.Title>
-                    </Card.Body>
+                    <p className="tool-title text-center">{toolsIconTitle[i]}</p>
                   </Card>
                 );
               })}

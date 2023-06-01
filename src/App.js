@@ -7,6 +7,7 @@ import Projects from "./sectionsLayout/Projects";
 import ButtonTop from "./sectionsLayout/ButtonTop";
 import Contact from "./sectionsLayout/Contact";
 import Footer from "./sectionsLayout/Footer";
+import ScrollButton from "./ScrollButton";
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
       <ButtonTop />
       <Contact />
       <Footer />
+      <ScrollButton />
     </div>
   );
 }
