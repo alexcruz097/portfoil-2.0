@@ -19,9 +19,9 @@ function Contact() {
 
         <Alert className="alert alert-email">
           <a
-            className="link"
+            className="link "
             href="mailto: alexc017@yahoo.com"
-            style={{ color: "white" }}
+            style={{ color: "white", fontSize: "1rem", fontWeight: "700"}}
           >
             Email Me: alexc017@yahoo.com
           </a>

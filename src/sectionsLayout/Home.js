@@ -82,12 +82,16 @@ function Home() {
               <br />
               Front-end web developer
             </p>
-            <button type="button" class="btn btn-danger work-together-btn">
+            <button type="button" class="work-btn" >
               <a href="#contacts">Lets work together</a>
             </button>
             {/* Q/A button */}
 
-            <Button className="ms-2" variant="primary" onClick={handleShow}>
+            <Button
+              className="ms-2 QA-BTN"
+              variant="primary"
+              onClick={handleShow}
+            >
               Q&A
             </Button>
 
