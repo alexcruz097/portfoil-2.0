@@ -24,13 +24,13 @@ function Home() {
   return (
     <section className="hero-section">
       {/* navbar */}
-      <Navbar className="fixed-top navbar " expand="md">
+      <Navbar className="fixed-top navbar navbar " expand="md">
         <Container>
           <Navbar.Brand href="#home">
             <img className="logo-img" src={logo} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav ">
             <Nav className="ms-auto">
               {/* link animations */}
               <Nav.Link
@@ -82,7 +82,7 @@ function Home() {
               <br />
               Front-end web developer
             </p>
-            <button type="button" class="work-btn" >
+            <button type="button" class="work-btn">
               <a href="#contacts">Lets work together</a>
             </button>
             {/* Q/A button */}
@@ -105,14 +105,19 @@ function Home() {
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>Who am I?</Accordion.Header>
                     <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      As a web developer, I enjoy creating websites that are
+                      visually appealing, functional, and user-friendly. I have
+                      knowledge of programming languages such as HTML, CSS,
+                      BootStrap,JavaScript and React to build websites from
+                      scratch or modify existing ones. I like to ensure that the
+                      website is optimized for speed, search engines, and
+                      accessibility. I enjoy working with designers, project
+                      managers, and other developers to ensure that the website
+                      meets the client's requirements and specifications. I have
+                      attention to detail, problem-solving skills, and the
+                      ability to work independently as well as part of a team.
+                      As a web developer, I have critical role in shaping the
+                      online experience of users and businesses.
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="1">
@@ -120,30 +125,27 @@ function Home() {
                       What do you enjoy about programming?
                     </Accordion.Header>
                     <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      I enjoy the creativity and problem-solving aspects of
+                      programming. It's satisfying to take an idea and turn it
+                      into a functioning program or website. Being able to see
+                      the end result of my work is also very rewarding.
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="2">
                     <Accordion.Header>
-                      What would your skills and personality contribute to our
+                      What would my skills and personality contribute to your
                       team?
                     </Accordion.Header>
                     <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      Based on my skills and passion for programming, I would be
+                      a valuable addition to any team. My enjoyment of learning
+                      and problem-solving abilities would allow me to contribute
+                      to the development of new programs and websites. I enjoy
+                      seeing projects through to completion and I always ensure
+                      that tasks are finished on time and to a high standard. My
+                      attention to detail and ability to work collaboratively
+                      makes me a great team player. Overall, my skills and
+                      personality would make me a valuable asset to any team.
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="3">
@@ -152,21 +154,22 @@ function Home() {
                       this field?
                     </Accordion.Header>
                     <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      One effective way that I stay up-to-date on current trends
+                      and advances in programming is to regularly read industry
+                      publications and blogs. Joining online forums and
+                      attending industry events and conferences is also a great
+                      way to stay informed and connected with other
+                      professionals in the field. Additionally, I enjoy
+                      networking with other programmers and participating in
+                      online communities can help me stay informed and
+                      up-to-date on the latest developments in programming.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
               </Offcanvas.Body>
             </Offcanvas>
           </Col>
-          <Col cs={1}>2 of 2</Col>
+          <Col cs={1}></Col>
         </Row>
       </Container>
     </section>

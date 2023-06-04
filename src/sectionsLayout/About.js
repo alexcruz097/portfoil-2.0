@@ -67,11 +67,11 @@ function About({ name, ...props }) {
         <Row className="my-5">
           <Col className="d-flex flex-column align-items-center justify-content-center">
             <img className="about-logo " src={starterLogo} />
-            <h3 className="text-center">|Self-Starter</h3>
+            <h2 className="text-center contact-card-header pb-2">|Self-Starter</h2>
             <p>
-              Being a self-taught web-developer has helped me become a
-              self-starter. I am always excited to learn new things and seeing
-              the finished product that I am working on.
+              By taking the initiative to stay up-to-date on industry trends and
+              developments, I can really set myself apart as a knowledgeable and
+              skilled professional.
             </p>
           </Col>
 
@@ -85,22 +85,25 @@ function About({ name, ...props }) {
           </Col>
           <Col className="d-flex flex-column align-items-center justify-content-center">
             <img className="about-logo " src={solverLogo} />
-            <h3 className="text-center">|Problem-Solver</h3>
+            <h2 className="text-center contact-card-header pb-2">|Problem-Solver</h2>
             <p>
-              I always try to be in uncomfortable situations by pushing myself
-              to learn new things. Instead of running away afraid of a new
-              challenge, I face it head-on.
+              As a programmer, I need to be able to identify issues, analyze
+              them, and come up with effective solutions. This requires critical
+              thinking, creativity, and persistence. By continuing to hone my
+              problem solving skills, I am able to be well-equipped to handle
+              any challenges that come my way in the programming world.
             </p>
           </Col>
         </Row>
         <Row className="my-5">
           <Col className="d-flex flex-column align-items-center justify-content-center">
             <img className="about-logo " src={prideLogo} />
-            <h3 className="text-center">|Pride</h3>
+            <h2 className="text-center contact-card-header pb-2">|Pride</h2>
             <p>
-              I take pride in the work I do. I am always thinking about better
-              ways that I can improve my projects. I take feedback from others
-              to improve the user experience.
+              By striving to create high-quality code and constantly seeking
+              ways to improve, I can create software that truly meets the needs
+              of our users and delivers a positive experience. I take pride in
+              doing quility work.
             </p>
           </Col>
 
@@ -130,7 +133,9 @@ function About({ name, ...props }) {
                 return (
                   <Card className="tool-card" style={{ width: "96px" }}>
                     <Card.Img variant="top" src={icon} />
-                    <p className="tool-title text-center">{toolsIconTitle[i]}</p>
+                    <p className="tool-title text-center">
+                      {toolsIconTitle[i]}
+                    </p>
                   </Card>
                 );
               })}

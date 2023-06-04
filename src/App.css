@@ -2,6 +2,11 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+.card-title,
+.contact-card-header{
+  font-family: 'Times New Roman', Times, serif;
+
+}
 /* changing navbar color */
 .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(12,244,103, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -115,13 +120,13 @@ a {
   transform: translateY(0) !important;
   cursor: pointer !important;
 }
-.toolBTN:hover{
+.toolBTN:hover {
   transition: 695ms !important;
   padding: 10px 41px !important;
   transform: translateY(-0px) !important;
   background-color: #34da86 !important;
   color: #ffffff !important;
-  border: solid 2px #34da86 !important; 
+  border: solid 2px #34da86 !important;
 }
 /* cards */
 .project-section {
@@ -155,7 +160,7 @@ a {
   transition: all 0.4s ease-in;
 }
 .card-title {
-  color: #70879f;
+  color: #2aa769;
   font-size: 1.8rem !important;
 }
 .card-description {
@@ -194,7 +199,7 @@ a {
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .alert-linkedin {
-  background-color: #2297F3 !important;
+  background-color: #2297f3 !important;
 }
 .alert-email {
   background-color: #4a00a0 !important;
