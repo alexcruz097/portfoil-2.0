@@ -67,7 +67,9 @@ function About({ name, ...props }) {
         <Row className="my-5">
           <Col className="d-flex flex-column align-items-center justify-content-center">
             <img className="about-logo " src={starterLogo} />
-            <h2 className="text-center contact-card-header pb-2">|Self-Starter</h2>
+            <h2 className="text-center contact-card-header pb-2">
+              |Self-Starter
+            </h2>
             <p>
               By taking the initiative to stay up-to-date on industry trends and
               developments, I can really set myself apart as a knowledgeable and
@@ -85,7 +87,9 @@ function About({ name, ...props }) {
           </Col>
           <Col className="d-flex flex-column align-items-center justify-content-center">
             <img className="about-logo " src={solverLogo} />
-            <h2 className="text-center contact-card-header pb-2">|Problem-Solver</h2>
+            <h2 className="text-center contact-card-header pb-2">
+              |Problem-Solver
+            </h2>
             <p>
               As a programmer, I need to be able to identify issues, analyze
               them, and come up with effective solutions. This requires critical

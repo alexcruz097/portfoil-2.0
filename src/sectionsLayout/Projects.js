@@ -20,6 +20,7 @@ import menuThumb from "../thumbnail/menuThumb.jpg";
 import tinDogThumb from "../thumbnail/tinDogThumb.jpg";
 import funThumb from "../thumbnail/funThumb.jpg";
 import budgetThumb from "../thumbnail/budgetThumb.jpg";
+import { Fade, Slide, Zoom } from "react-awesome-reveal";
 function Projects() {
   // put all images into an array
   let thumbnail = [
@@ -44,6 +45,7 @@ function Projects() {
 
       <Container className="cards-container">
         {data[0].cardData.map((project, i) => (
+          <Zoom right cascade>
           <Card className="card">
             <Card.Body>
               <Card.Title className="text-center card-title">
@@ -83,6 +85,7 @@ function Projects() {
               </a>
             </Card.Body>
           </Card>
+          </Zoom>
         ))}
       </Container>
     </section>

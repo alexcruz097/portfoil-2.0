@@ -13,10 +13,12 @@ import Col from "react-bootstrap/Col";
 import logo from "../images/Alexlogo.png";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
-
 // import gif
 import gitHub from "../image-icons/navGitHub.png";
-function Home() {
+// component animations
+import { Bounce, Fade, Slide, Zoom } from "react-awesome-reveal";
+
+function Home({top}) {
   // funtion to toggle Q/A
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -77,11 +79,13 @@ function Home() {
       <Container id="home">
         <Row className="d-flex align-items-center" style={{ height: "70vh" }}>
           <Col xs={10} className="mt-5 pt-5">
+            <Slide top cascade>
             <p style={{ color: "white" }} className="display-6">
               Hello, My name is Alex Cruz
               <br />
               Front-end web developer
             </p>
+            </Slide>
             <button type="button" class="work-btn">
               <a href="#contacts">Lets work together</a>
             </button>
