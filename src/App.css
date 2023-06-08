@@ -6,14 +6,14 @@
 .contact-card-header {
   font-family: "Times New Roman", Times, serif;
 }
-.github-logo-container{
- 
-}
+
 .portfolio-gitHub-logo {
   position: absolute;
+  background-color: #11100b;
+  padding: 1rem 0.5rem 3rem 3rem;
   right: 0rem;
-  top: 5vh;
-
+  top: 6vh;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
 }
 
 /* changing navbar color */
