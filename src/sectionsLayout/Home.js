@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Accordion from "react-bootstrap/Accordion";
-
+import GithubLogo from "./GithubLogo";
 // bootstrap navbar
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -18,7 +18,7 @@ import gitHub from "../image-icons/navGitHub.png";
 // component animations
 import { Bounce, Fade, Slide, Zoom } from "react-awesome-reveal";
 
-function Home({top}) {
+function Home({ top }) {
   // funtion to toggle Q/A
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -63,28 +63,22 @@ function Home({top}) {
               >
                 Contacts
               </Nav.Link>
-              <Nav.Link
-                className="fs-5"
-                style={{ color: "white" }}
-                href="https://github.com/alexcruz097/portfoil-2.0"
-                target="_blank"
-              >
-                <img src={gitHub} />
-              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
       {/* Hero content */}
       <Container id="home">
+      <GithubLogo />
+
         <Row className="d-flex align-items-center" style={{ height: "70vh" }}>
           <Col xs={10} className="mt-5 pt-5">
             <Slide top cascade>
-            <p style={{ color: "white" }} className="display-6">
-              Hello, My name is Alex Cruz
-              <br />
-              Front-end web developer
-            </p>
+              <p style={{ color: "white" }} className="display-6">
+                Hello, My name is Alex Cruz
+                <br />
+                Front-end web developer
+              </p>
             </Slide>
             <button type="button" class="work-btn">
               <a href="#contacts">Lets work together</a>
