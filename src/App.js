@@ -8,7 +8,6 @@ import ButtonTop from "./sectionsLayout/ButtonTop";
 import Contact from "./sectionsLayout/Contact";
 import Footer from "./sectionsLayout/Footer";
 import ScrollButton from "./ScrollButton";
-import GithubLogo from "./sectionsLayout/GithubLogo";
 function App() {
   return (
     <div className="App">

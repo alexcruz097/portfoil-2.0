@@ -16,7 +16,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 // import gif
 import gitHub from "../image-icons/navGitHub.png";
 // component animations
-import { Bounce, Fade, Slide, Zoom } from "react-awesome-reveal";
+import { Bounce, Fade, Flip, Slide, Zoom } from "react-awesome-reveal";
 
 function Home({ top }) {
   // funtion to toggle Q/A
@@ -69,17 +69,18 @@ function Home({ top }) {
       </Navbar>
       {/* Hero content */}
       <Container id="home">
-      <GithubLogo />
+        <GithubLogo />
 
         <Row className="d-flex align-items-center" style={{ height: "70vh" }}>
           <Col xs={10} className="mt-5 pt-5">
-            <Slide top cascade>
-              <p style={{ color: "white" }} className="display-6">
-                Hello, My name is Alex Cruz
-                <br />
+            <p style={{ color: "white" }} className="display-6">
+              <Slide direction="up" duration={2000} triggerOnce="true">Hello, My name is Alex</Slide>
+
+              <Fade cascade duration={150} triggerOnce="true">
                 Front-end web developer
-              </p>
-            </Slide>
+              </Fade>
+            </p>
+
             <button type="button" class="work-btn">
               <a href="#contacts">Lets work together</a>
             </button>
