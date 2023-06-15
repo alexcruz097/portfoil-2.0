@@ -26,6 +26,7 @@ import commandIcon from "../about-img/icons-command-line.png";
 import gitIcon from "../about-img/icons-git.png";
 import gitHubIcon from "../about-img/icons-github.png";
 import herokuIcon from "../about-img/icons-heroku.png";
+import { Fade, Slide } from "react-awesome-reveal";
 
 function About({ name, ...props }) {
   // icon title
@@ -61,12 +62,16 @@ function About({ name, ...props }) {
 
   return (
     <section className="about-section" id="about">
-      <p className="text-center pt-5 mb-5 display-5">About Me</p>
+      <p className="text-center pt-5 mb-5 display-5">
+        <Fade>About Me</Fade>
+      </p>
 
       <Container className="pb-5">
         <Row className="my-5">
           <Col className="d-flex flex-column align-items-center justify-content-center">
+            {/* <Fade direction="left" cascade duration={700} triggerOnce="true"> */}
             <img className="about-logo " src={starterLogo} />
+
             <h2 className="text-center contact-card-header pb-2">
               |Self-Starter
             </h2>
@@ -75,17 +80,24 @@ function About({ name, ...props }) {
               developments, I can really set myself apart as a knowledgeable and
               skilled professional.
             </p>
+            {/* </Fade> */}
           </Col>
 
           <Col className="about-thumnail">
-            <Image src={starterImage} thumbnail />
+            <Fade direction="right" duration={2000} triggerOnce="true">
+              {" "}
+              <Image src={starterImage} thumbnail />
+            </Fade>
           </Col>
         </Row>
         <Row className="my-5">
           <Col className="about-thumnail">
-            <Image src={problemIMG} thumbnail />
+            <Fade direction="left" duration={2000} triggerOnce="true">
+              <Image src={problemIMG} thumbnail />
+            </Fade>
           </Col>
           <Col className="d-flex flex-column align-items-center justify-content-center">
+            {/* <Fade direction="left" cascade duration={700} triggerOnce="true"> */}
             <img className="about-logo " src={solverLogo} />
             <h2 className="text-center contact-card-header pb-2">
               |Problem-Solver
@@ -97,10 +109,12 @@ function About({ name, ...props }) {
               problem solving skills, I am able to be well-equipped to handle
               any challenges that come my way in the programming world.
             </p>
+            {/* </Fade> */}
           </Col>
         </Row>
         <Row className="my-5">
           <Col className="d-flex flex-column align-items-center justify-content-center">
+            {/* <Fade direction="left" cascade duration={700} triggerOnce="true"> */}
             <img className="about-logo " src={prideLogo} />
             <h2 className="text-center contact-card-header pb-2">|Pride</h2>
             <p>
@@ -109,10 +123,13 @@ function About({ name, ...props }) {
               of our users and delivers a positive experience. I take pride in
               doing quility work.
             </p>
+            {/* </Fade> */}
           </Col>
 
           <Col className="about-thumnail">
-            <Image src={prideIMG} thumbnail />
+            <Fade direction="right" duration={2000} triggerOnce="true">
+              <Image src={prideIMG} thumbnail />
+            </Fade>
           </Col>
         </Row>
         <>

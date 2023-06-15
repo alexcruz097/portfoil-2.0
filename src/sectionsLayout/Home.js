@@ -29,40 +29,46 @@ function Home({ top }) {
       <Navbar className="fixed-top navbar navbar " expand="md">
         <Container>
           <Navbar.Brand href="#home">
-            <img className="logo-img" src={logo} />
+            <Fade duration={3000} triggerOnce="true">
+              <img className="logo-img" src={logo} />
+            </Fade>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Fade duration={3000} triggerOnce="true">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          </Fade>
           <Navbar.Collapse id="basic-navbar-nav ">
             <Nav className="ms-auto">
-              {/* link animations */}
-              <Nav.Link
-                className="fs-5"
-                style={{ color: "white" }}
-                href="#home"
-              >
-                Home
-              </Nav.Link>
-              <Nav.Link
-                className="fs-5"
-                style={{ color: "white" }}
-                href="#about"
-              >
-                About
-              </Nav.Link>
-              <Nav.Link
-                className="fs-5"
-                style={{ color: "white" }}
-                href="#projects"
-              >
-                Projects
-              </Nav.Link>
-              <Nav.Link
-                className="fs-5"
-                style={{ color: "white" }}
-                href="#contacts"
-              >
-                Contacts
-              </Nav.Link>
+              <Fade direction="down" >
+                {/* link animations */}
+                <Nav.Link
+                  className="fs-5"
+                  style={{ color: "white" }}
+                  href="#home"
+                >
+                  Home
+                </Nav.Link>
+                <Nav.Link
+                  className="fs-5"
+                  style={{ color: "white" }}
+                  href="#about"
+                >
+                  About
+                </Nav.Link>
+                <Nav.Link
+                  className="fs-5"
+                  style={{ color: "white" }}
+                  href="#projects"
+                >
+                  Projects
+                </Nav.Link>
+                <Nav.Link
+                  className="fs-5"
+                  style={{ color: "white" }}
+                  href="#contacts"
+                >
+                  Contacts
+                </Nav.Link>
+              </Fade>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -74,7 +80,9 @@ function Home({ top }) {
         <Row className="d-flex align-items-center" style={{ height: "70vh" }}>
           <Col xs={10} className="mt-5 pt-5">
             <p style={{ color: "white" }} className="display-6">
-              <Slide direction="up" duration={2000} triggerOnce="true">Hello, My name is Alex</Slide>
+              <Fade direction="down" duration={2000} triggerOnce="true">
+                Hello, My name is Alex
+              </Fade>
 
               <Fade cascade duration={150} triggerOnce="true">
                 Front-end web developer
@@ -82,7 +90,11 @@ function Home({ top }) {
             </p>
 
             <button type="button" class="work-btn">
-              <a href="#contacts">Lets work together</a>
+              <a href="#contacts">
+                <Fade  duration={2500} triggerOnce="true">
+                  Lets work together
+                </Fade>
+              </a>
             </button>
             {/* Q/A button */}
 
@@ -91,7 +103,9 @@ function Home({ top }) {
               variant="primary"
               onClick={handleShow}
             >
-              Q&A
+              <Fade  duration={2500} triggerOnce="true">
+                Q&A
+              </Fade>
             </Button>
 
             <Offcanvas show={show} onHide={handleClose}>

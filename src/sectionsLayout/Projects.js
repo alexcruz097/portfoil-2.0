@@ -20,7 +20,7 @@ import menuThumb from "../thumbnail/menuThumb.jpg";
 import tinDogThumb from "../thumbnail/tinDogThumb.jpg";
 import funThumb from "../thumbnail/funThumb.jpg";
 import budgetThumb from "../thumbnail/budgetThumb.jpg";
-import { Bounce, Fade, Flip, Hinge, JackInTheBox, Roll, Rotate, Slide, Zoom } from "react-awesome-reveal";
+import {  Fade } from "react-awesome-reveal";
 function Projects() {
   // put all images into an array
   let thumbnail = [
@@ -47,7 +47,7 @@ function Projects() {
         {data[0].cardData.map((project, i) => (
           <Card className="card">
             <Card.Body>
-            <Fade direction="up"  >
+            <Fade direction="up" triggerOnce="true" >
               <Card.Title className="text-center card-title">
                 {project.name}
               </Card.Title>
@@ -59,16 +59,16 @@ function Projects() {
               </Fade>
             </Card.Body>
             {/* iterate thru images array */}
-            <JackInTheBox>
+            <Fade duration={2500} triggerOnce="true">
             <a src={project.url}>
               <Card.Img className="card-img" variant="top" src={thumbnail[i]} />
             </a>
-            </JackInTheBox>
+            </Fade>
             <ListGroup className="list-group-flush">
               {/* iterate thru projects tools*/}
               {project.techUse.map((tool, i) => {
                 return (
-                  <Fade direction="up" cascade  >
+                  <Fade direction="up" cascade  triggerOnce="true">
                     <ListGroup.Item className="card-list">
                       {" "}
                       {i + 1}. {tool}
